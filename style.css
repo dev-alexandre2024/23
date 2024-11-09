@@ -3,11 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @font-face {
-    font-family:'Android' ;
-    src: url('../fontes/idroid.otf') format('opentype');
- font-weight: normal;
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
 
 }
+
 :root {
     --cor0: #ebe5c5;
     --cor1: #83e1ad;
@@ -17,23 +18,83 @@
     --cor5: #063d1e;
 
     --fonte-padrao: Arial, verdana, helvetica, sans-serif;
-    --fonte-destaque:'Bebas Neue', 'cursive';
-    --fonte-android:'Android', 'cursive' ;
+    --fonte-destaque: 'Bebas Neue', 'cursive';
+    --fonte-android: 'Android', 'cursive';
 }
-    
+
 
 body {
-    background-color:var(--cor0);
+    background-color: var(--cor0);
     font-family: var(--fonte-padrao);
-    
-}
 
+}
+nav{
+    background-color: #063d1e;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.349) ;
+}
+nav > a {
+    color:white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+
+}
+nav > a:hover{
+    background-color: #2fa866;
+    color: #063d1e;
+}
+header{
+    background-color: #1a5c37;
+    min-height:150px ;
+    text-align: center;
+ background-image: linear-gradient(to bottom, var(--cor3),var(--cor5));
+}
+header > p{
+    font-family: var(--fonte-destaque);
+    font-size: 1.2em;
+    color:white;
+    max-width:500px;
+    margin:auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
 header>h1 {
-    color: var(--cor3);
- font-family: var(--fonte-destaque);
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
 
 main>h1 {
-    color: var(--cor5);
-font: var(--fonte-android);
+    color: var(--cor0);
+    font: var(--fonte-android);
+ 
+
+}
+main h2{
+    font-family: var(--fonte-android);
+}
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.418);
+}
+
+main img{
+    width:100%;
+}
+main img.pequeno{
+width:50%;
+margin:  auto;
+display: block;
+}
+footer{
+    background-color: #063d1e;
 }
